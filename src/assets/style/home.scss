@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 320px,
+        lg: 768px,
+        xl: 1280px,
+        xxl: 1640px
+);
+
+$container-max-widths: (
+        sm: 0,
+        md: 100%,
+        lg: 100%,
+        xl: 1162px,
+        xxl: 1640px,
+);
+@import "bootstrap/bootstrap";
+
+.container {
+  max-width: 1640px;
+}
+
+/*Header*/
+.header {
+  padding-top: 107px;
+  line-height: 68px;
+}
+
+/*Title Info Block*/
+.title-info {
+  margin: 70px 0 100px 100px;
+}
+.title-info-span {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/*Left-side*/
+.left-side {
+  padding-right: 35px;
+}
+
+.menu-adaptive-icon {
+  display: none;
+}
+
+/*Right-side*/
+.right-side {
+  padding-left: 40px;
+  font-size: 20px;
+  line-height: 47px;
+}
+.right-side span {
+  display: block;
+  margin-bottom: 35px;
+  font-size: 24px;
+}
+
+/*Bottom Content*/
+.bottom-content{
+  padding: 120px 15px 42px;
+}
+.bottom-content li {
+  display: inline-block;
+}
+.bottom-content li a {
+  font-size: 17px;
+  line-height: 27px;
+}
+.bottom-content .bottom-menu {
+  margin-left: 100px;
+}
+
+/*Footer*/
+.footer {
+  display: block;
+  line-height: 106px;
+  background: #fff;
+}
+
+
+/*Home Multi*/
+body.multi {
+  .left-side form .form-row > .col,
+  .left-side form .form-row > [class*="col-"] {
+    padding: 0 35px 0 0;
+  }
+  .bottom-content {
+    padding-top: 42px;
+  }
+}
+
+
+
+
+/*Home-3*/
+body.home-3 {
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  .bootstrap-select a {
+    color: #000;
+  }
+  .bootstrap-select .dropdown-item.active, .bootstrap-select .dropdown-item:active {
+    color: #fff;
+  }
+  .header-phone .phone-icon {
+    background: url('https://res.cloudinary.com/kr-soft/image/upload/v1562141122/phone_white_cy2yh0.png') no-repeat left;
+  }
+  .header-right-sign-up span {
+    background: url('https://res.cloudinary.com/kr-soft/image/upload/v1562141123/sign_up_white_fxzthk.png') no-repeat left;
+  }
+  .header-right-login span {
+    background: url('https://res.cloudinary.com/kr-soft/image/upload/v1562141120/login_white_ko6jr1.png') no-repeat left;
+  }
+  .header-right-country-toggle a,
+  .header-right-currency-toggle a,
+  .footer {
+    color: #000;
+  }
+  .left-side form .form-check label:before {
+    border: 3px solid #fff;
+  }
+  .left-side form .dropdown-menu.options .form-check label:before {
+    border: 3px solid #000000;
+  }
+  /*Adaptive Menu*/
+  .adaptive-menu, .adaptive-menu a, .filter, .filter a {
+    color: #000;
+  }
+}
+
+
+
+
+
+
+
+
+

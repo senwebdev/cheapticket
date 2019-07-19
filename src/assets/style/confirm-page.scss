@@ -1,0 +1,551 @@
+$grid-breakpoints: (
+        sm: 0,
+        md: 320px,
+        lg: 768px,
+        xl: 1280px,
+        xxl: 1920px
+);
+
+$container-max-widths: (
+        sm: 0,
+        md: 320,
+        lg: 750,
+        xl: 768px,
+        xxl: 1920px,
+);
+@import "bootstrap/bootstrap";
+
+
+body {
+  background: #F9F9F9;
+}
+
+.form-control,
+.input-group-text {
+  height: 45px;
+  line-height: 45px;
+  background: #FBFBFB;
+  border: 1px solid #E8E8E8;
+  border-radius: 6px;
+}
+.input-group.date > .form-control:not(:last-child) {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.input-group-text {
+  border-left: none;
+}
+.input-group.date {
+  position: relative;
+  border-radius: 6px;
+  .input-group-addon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0.75rem;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562246197/arrow_down_multi_hjixa8.png") no-repeat right;
+    cursor: pointer;
+  }
+}
+.confirm-checkbox {
+  margin: 30px 0 0 50px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*Header*/
+.header {
+  line-height: 100px;
+  .header-adaptive {
+    display: none;
+  }
+  .header-right > div.header-right-currency {
+    margin-left: 0;
+  }
+  .header-right-country-toggle, .header-right-currency-toggle {
+    top: 28px;
+  }
+}
+
+/*Main Content*/
+/*Left Side*/
+.left-side-wrapper {
+  width: 285px;
+  margin: 0 auto;
+  .header-logo {
+    margin-bottom: 75px;
+    span {
+      padding-left: 28px;
+    }
+  }
+  .account-name {
+    margin-left: 60px;
+    padding-left: 35px;
+    font-size: 21px;
+    font-weight: 500;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141119/login_r6co23.png") no-repeat left;
+  }
+  .account-links {
+    margin: 20px 0 50px 95px;
+    font-size: 12px;
+    a {
+      text-decoration: underline;
+    }
+    a:first-child {
+      padding-right: 20px;
+    }
+  }
+  .left-menu {
+    margin-left: 96px;
+    font-size: 16px;
+    line-height: 33px;
+  }
+}
+/*Right Side*/
+.confirm-page-content {
+  .confirm-title-icon {
+    display: none;
+  }
+  .confirm-title {
+    padding: 50px 200px 50px 0;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+  }
+  .confirm-block {
+    margin-bottom: 10px;
+    background: #FFFFFF;
+  }
+  .wrapper {
+    padding-right: 200px;
+  }
+  .black-plane {
+    margin: 0 auto;
+  }
+  /*Row Confirm Airports*/
+  .confirm-airports {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #E3E3E3;
+    .confirm-first-airport, .confirm-second-airport {
+      float: left;
+    }
+    .confirm-airport-name {
+      margin-bottom: 10px;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 33px;
+      span {
+        color: #BCBCBC;
+      }
+    }
+    .confirm-first-airport .confirm-airport-name:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 120px;
+      height: 2px;
+      margin: 0 25px;
+      background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141115/confirm_between_line_rwdaaa.png") repeat-x;
+    }
+    .confirm-airport-time {
+      margin: 40px 0 10px;
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    .confirm-go-air-number {
+      width: 115px;
+      padding-left: 50px;
+      font-size: 16px;
+      line-height: 19px;
+      background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141116/flight_icon1_tzgmqh.png") no-repeat left;
+    }
+    .confirm-go-air-stop {
+      margin: 60px 0 25px;
+      font-size: 16px;
+      line-height: 19px;
+      span {
+        padding-left: 25px;
+        color: #4C4C4C;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+    .confirm-go-air-icons img {
+      padding-right: 15px;
+    }
+  }
+  /*Row Confirm Contacts and Promo*/
+  .confirm-contacts {
+    padding: 50px 0;
+    .confirm-contacts-title {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    .confirm-contacts-info {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 36px;
+    }
+    .confirm-contacts-link {
+      color: #686868;
+      font-size: 12px;
+      text-decoration: underline;
+    }
+  }
+  .confirm-promo-code {
+    padding-bottom: 90px;
+    .apply {
+      text-align: center;
+      margin-top: 25px;
+      padding: 0 55px;
+      line-height: 43px;
+      text-transform: uppercase;
+    }
+  }
+  /*Row Confirm Travelers*/
+  .confirm-travelers-add {
+    a {
+      display: inline-block;
+      padding: 50px 0 100px;
+      color: #216EDB;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: uppercase;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 42px;
+        height: 42px;
+        margin-right: 24px;
+        text-indent: -99999px;
+        background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141114/add_new_traveler_qk2jws.png") no-repeat center;
+      }
+    }
+  }
+  /*Row Service Requests*/
+  #accordion-service-requests {
+    margin-bottom: 60px;
+    .card {
+      border: none;
+      border-radius: 3px;
+      .card-header {
+        background-color: #F9F9F9;
+        border-bottom: 7px solid #fff;
+        .btn {
+          position: relative;
+          text-align: left;
+          width: 100%;
+          color: #000;
+          font-size: 15px;
+          font-weight: 500;
+          text-transform: uppercase;
+          span {
+            display: none;
+          }
+        }
+        .btn:focus, .btn.focus {
+          text-decoration: none;
+        }
+        .btn:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          right: 0.75rem;
+          width: 100%;
+          height: 100%;
+          background: url('https://res.cloudinary.com/kr-soft/image/upload/v1562246197/arrow_down_multi_hjixa8.png') no-repeat right;
+          cursor: pointer;
+        }
+        .btn.collapsed:after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          right: 0.75rem;
+          width: 100%;
+          height: 100%;
+          background: url('https://res.cloudinary.com/kr-soft/image/upload/v1562246197/arrow_down_multi_hjixa8.png') no-repeat right;
+          cursor: pointer;
+        }
+      }
+      .card-body {
+        padding: 0.25rem 1.25rem 0 2rem;
+        .service-airports .confirm-airports {
+          padding-top: 40px;
+        }
+        .service-settings {
+          padding: 40px 0;
+          label {
+            font-size: 18px;
+            font-weight: 500;
+          }
+          .service-settings-close {
+            text-align: center;
+            margin-top: 35px;
+          }
+        }
+        .service-places {
+          position: relative;
+          padding-top: 50px;
+          .service-places-passengers {
+            float: left;
+            width: 500px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #E3E3E3;
+            .title {
+              padding-bottom: 30px;
+            }
+            .passenger {
+              margin-bottom: 10px;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 21px;
+              .status-icon {
+                display: inline-block;
+                width: 27px;
+                height: 15px;
+                margin-right: 20px;
+                background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141121/passenger_confirm_houji1.png") no-repeat center;
+              }
+              p {
+                display: inline-block;
+                width: 200px;
+              }
+              p.select-place-adaptive {
+                display: none;
+              }
+              input.form-control {
+                display: none;
+              }
+              .status-text {
+                font-weight: normal;
+                border-bottom: 1px dashed;
+                strong {
+                  color: #000;
+                }
+              }
+            }
+            .passenger.active {
+              .status-icon {
+                vertical-align: middle;
+                width: 27px;
+                height: 27px;
+                background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141116/confirm_promo_code_apply_dwieev.png") no-repeat center;
+                background-size: 27px auto;
+              }
+              .status-text {
+                color: #0E72E2;
+                font-size: 18px;
+                font-weight: 500;
+                border: none;
+              }
+            }
+          }
+          .service-places-choose {
+            display: none;
+            float: right;
+          }
+          .service-places-choose.active {
+            display: block;
+          }
+          .service-places-info {
+            float: left;
+            padding-top: 30px;
+            font-size: 12px;
+            .places-color {
+              padding-bottom: 10px;
+              span {
+                display: inline-block;
+                vertical-align: middle;
+                width: 36px;
+                height: 36px;
+                margin-right: 20px;
+                background: #0089E8;
+                border: 1px solid #E8E8E8;
+                border-radius: 3px;
+              }
+            }
+            .places-color:nth-child(2) span {
+              background: #FBFBFB;
+            }
+            .places-color:nth-child(3) span {
+              background: #DADADA;
+            }
+            .places-color:nth-child(4) span {
+              background: #FFDB00;
+            }
+          }
+          .service-places-confirm {
+            position: absolute;
+            float: left;
+            bottom: 0;
+            width: 500px;
+            font-size: 15px;
+            line-height: 18px;
+            .confirm-button {
+              display: block;
+              text-align: center;
+              width: 250px;
+              margin-top: 40px;
+              color: #fff;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 45px;
+              text-transform: uppercase;
+              background: #008BEB;
+              border: none;
+              border-radius: 3px;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*Row Choose Payment Method*/
+  .confirm-title.payment {
+    display: none;
+  }
+  /*Payment Methods List*/
+  .payment-list {
+    padding-top: 40px;
+    padding-right: 195px;
+    .payment-switch-tabs {
+      li {
+        display: inline-block;
+        text-align: center;
+        width: 134px;
+        margin-right: 10px;
+        line-height: 45px;
+        border: 1px solid #E8E8E8;
+        border-radius: 4px;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      li.active {
+        color: #216EDB;
+        border-bottom: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+  /*Payment Methods Select*/
+  .payment-select {
+    display: none;
+  }
+  /*Payment Box Tabs*/
+  .payment-box-tabs > div {
+    display: none;
+  }
+  .payment-box-tabs > .active {
+    display: flex;
+  }
+  /*Payment Form*/
+  .payment-form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .confirm-checkbox {
+      margin: 0;
+    }
+    /*Confirm Accept Row*/
+    .confirm-accept {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      .accept-title {
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 14px;
+      }
+      a {
+        color: #216EDB;
+        text-decoration: underline;
+      }
+    }
+    /*Confirm Total Row*/
+    .confirm-total {
+      font-size: 21px;
+      line-height: 37px;
+      .total-amount {
+        float: left;
+        .price {
+          padding-left: 15px;
+          font-size: 32px;
+        }
+      }
+      .book-flight {
+        display: block;
+        text-align: center;
+        float: right;
+        padding: 0 82px;
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 45px;
+        text-transform: uppercase;
+        background: #FBDE4B;
+        border: none;
+        box-shadow: none;
+      }
+      .book-flight:hover {
+        box-shadow: none;
+      }
+      .confirm-advert {
+        margin-top: 50px;
+        clear: both;
+      }
+    }
+  }
+}
+/*Footer*/
+.footer {
+  .bottom-menu {
+    padding: 43px 15px 90px;
+  }
+  .after-bottom-menu {
+    display: none;
+  }
+}
+
+.letter, .number {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  float: left;
+  font-size: 18px;
+  font-weight: 500;
+  div {
+    width: 36px;
+    height: 36px;
+    margin: 0 3px 3px 0;
+    line-height: 36px;
+  }
+  input {
+    display: none;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  label:before {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: #FBFBFB;
+    border: 1px solid #E8E8E8;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input:checked + label:before {
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141122/places_input_vvfzzi.png")#3987F0 no-repeat center;
+  }
+  input:disabled + label:before {
+    background: #DADADA;
+  }
+  input.yellow:disabled + label:before {
+    background: #FFDC22;
+  }
+}

@@ -1,0 +1,261 @@
+@media (max-width: 1919px) {
+  body {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .container {
+    max-width: 1280px;
+  }
+  /*Right Side*/
+  .right-side {
+    /*Row Contact Us*/
+    .contact-us {
+      .contact-icon {
+        padding-top: 30px;
+      }
+      .contact-us-left {
+        padding: 30px 0;
+        .contact-us-left-title {
+          font-size: 24px;
+          line-height: 28px;
+        }
+      }
+      .contact-us-right {
+        .contact-us-map {
+          float: none;
+          width: auto;
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+    /*Row Contact Support*/
+    .contact-support {
+      padding: 35px 0;
+      .contact-support-title {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .contact-support-select {
+        padding: 10px 0 30px;
+        .submit-requestion-info {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  /*Footer*/
+  .footer {
+    .bottom-menu {
+      padding: 32px 15px 58px;
+    }
+  }
+}
+@media (max-width: 1279px) {
+  .container {
+    max-width: 768px;
+    padding: 0 9px;
+  }
+  .contact-checkbox {
+    margin: 30px 0 0 25px;
+  }
+  /*Header*/
+  .header {
+    padding-top: 10px;
+    line-height: normal;
+    .header-left {
+      z-index: 3;
+    }
+    .header-adaptive {
+      display: block;
+    }
+    .header-adaptive-left {
+      float: left;
+    }
+    .header-adaptive-right {
+      float: right;
+    }
+    .header-phone, .header-right {
+      display: none;
+    }
+    .header-logo, .header-arrow-icon {
+      display: inline-block;
+    }
+    .header-logo {
+      padding-left: 20px;
+      img {
+        width: 36px;
+      }
+    }
+    .menu-adaptive-icon {
+      padding-right: 20px;
+    }
+  }
+  /*Left Side*/
+  .left-side {
+    display: none;
+  }
+  /*Right Side*/
+  .right-side {
+    margin-top: -20px;
+    /*Row Contact Us Adaptive Title*/
+    .contact-us-adaptive-title {
+      display: flex;
+      margin-bottom: 10px;
+      padding: 30px 0 10px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+      background: #FFFFFF;
+    }
+    /*Row Contact Us*/
+    .contact-us {
+      .contact-icon a, .contact-us-left-title {
+        display: none;
+      }
+      .contact-us-left {
+        .contact-us-left-text {
+          .contact-us-left-text-block {
+            float: left;
+            margin-right: 55px;
+          }
+          .contact-us-left-text-block:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .contact-us-right .contact-us-map {
+        img {
+          height: auto;
+        }
+      }
+    }
+    /*Row Contact Support*/
+    .contact-support {
+      .contact-support-title {
+        font-size: 18px;
+        line-height: 21px;
+      }
+      .contact-support-select {
+        padding: 20px 0 30px;
+        .submit-requestion-info {
+          font-size: 12px;
+          line-height: 21px;
+        }
+      }
+      .support-form-info li {
+        font-size: 12px;
+        line-height: 21px;
+      }
+      .upload-file-button, .submit-query {
+        font-size: 12px;
+      }
+      .fill-in-required {
+        font-size: 12px;
+      }
+    }
+  }
+  /*Footer*/
+  .footer {
+    .bottom-menu {
+      display: none;
+    }
+    .after-bottom-menu {
+      display: block;
+      padding: 10px 9px 30px;
+      color: #686868;
+      font-size: 9px;
+      line-height: 11px;
+    }
+    .confirm-copyright {
+      float: left;
+    }
+    .confirm-made-with {
+      float: right;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 320px;
+    padding: 0 8px;
+  }
+  .form-control {
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    background: #FBFBFB;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+  }
+  .contact-checkbox {
+    margin: 0 auto;
+  }
+  /*Right Side*/
+  .right-side {
+    /*Row Contact Us Adaptive Title*/
+    .contact-us-adaptive-title {
+      font-size: 15px;
+      line-height: 18px;
+      .contact-icon a {
+        background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141116/confirm_title_adaptive_icon_to0lzc.png") no-repeat center;
+      }
+    }
+    /*Row Contact Us*/
+    .contact-us {
+      .contact-us-left {
+        padding: 15px 15px 0 15px;
+        font-size: 12px;
+        .contact-us-left-text .contact-us-left-text-block {
+          float: none;
+          margin: 0 auto;
+        }
+      }
+    }
+    /*Row Contact Support*/
+    .contact-support {
+      padding: 0 0 20px 0;
+      .contact-support-title {
+        padding: 15px;
+        font-size: 15px;
+        line-height: 18px;
+        border-bottom: 2px solid #F9F9F9;
+      }
+      .contact-support-select {
+        padding: 15px;
+        .submit-requestion-info {
+          margin-top: 15px;
+        }
+      }
+      form {
+        padding: 0 15px;
+      }
+      .support-form-info {
+        margin-bottom: 5px;
+        li {
+          font-size: 12px;
+          line-height: 21px;
+        }
+      }
+      .upload-file-button, .submit-query {
+        line-height: 35px;
+        border-radius: 3px;
+      }
+      .fill-in-required {
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 35px;
+      }
+    }
+  }
+  /*Footer*/
+  .footer {
+    .bottom-menu {
+      display: none;
+    }
+    .after-bottom-menu {
+      padding: 10px 0 30px;
+    }
+  }
+}

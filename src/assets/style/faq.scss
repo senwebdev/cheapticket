@@ -1,0 +1,233 @@
+$grid-breakpoints: (
+        sm: 0,
+        md: 320px,
+        lg: 768px,
+        xl: 1280px,
+        xxl: 1920px
+);
+
+$container-max-widths: (
+        sm: 0,
+        md: 320,
+        lg: 750,
+        xl: 768px,
+        xxl: 1920px,
+);
+@import "bootstrap/bootstrap";
+
+
+body {
+  background: #F9F9F9;
+}
+
+.form-control,
+.input-group-text {
+  height: 45px;
+  line-height: 45px;
+  background: #FBFBFB;
+  border: 1px solid #E8E8E8;
+  border-radius: 6px;
+}
+.input-group.date > .form-control:not(:last-child) {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.input-group-text {
+  border-left: none;
+}
+.input-group.date {
+  position: relative;
+  border-radius: 6px;
+  .input-group-addon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0.75rem;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562246197/arrow_down_multi_hjixa8.png") no-repeat right;
+    cursor: pointer;
+  }
+}
+.faq-checkbox {
+  margin: 30px 0 0 50px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.intl-tel-input {
+  display: block;
+}
+
+/*Header*/
+.header {
+  line-height: 100px;
+  .header-adaptive {
+    display: none;
+  }
+  .header-right > div.header-right-currency {
+    margin-left: 0;
+  }
+  .header-right-country-toggle, .header-right-currency-toggle {
+    top: 28px;
+  }
+}
+/*Main Content*/
+/*Left Side*/
+.left-side-wrapper {
+  width: 285px;
+  margin: 0 auto;
+  .header-logo {
+    margin-bottom: 75px;
+    span {
+      padding-left: 28px;
+    }
+  }
+  .account-name {
+    margin-left: 60px;
+    padding-left: 35px;
+    font-size: 21px;
+    font-weight: 500;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141119/login_r6co23.png") no-repeat left;
+  }
+  .account-links {
+    margin: 20px 0 50px 95px;
+    font-size: 12px;
+    a {
+      text-decoration: underline;
+    }
+    a:first-child {
+      padding-right: 20px;
+    }
+  }
+  .left-menu {
+    margin-left: 96px;
+    font-size: 16px;
+    line-height: 33px;
+  }
+}
+/*Right Side*/
+.right-side {
+  .faq-block {
+    margin-bottom: 10px;
+    background: #FFFFFF;
+  }
+  .faq-wrapper {
+    padding-right: 60px;
+  }
+  /*FAQ Icon*/
+  .faq-icon {
+    text-align: center;
+  }
+  .faq-icon a {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141119/login_r6co23.png") no-repeat center;
+  }
+  /*FAQ Title*/
+  .faq-title {
+    padding-top: 70px;
+    padding-bottom: 25px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    span {
+      display: block;
+      padding-top: 20px;
+      color: #6B6B6B;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 18px;
+    }
+  }
+  /*Row FAQ Top Block Info*/
+  .faq-top-block-info {
+    .faq-top-block-info-text {
+      color: #6B6B6B;
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .faq-top-block-info-select {
+      padding: 45px 0;
+    }
+  }
+  /*Row FAQ Tabs*/
+  .faq-tabs {
+    /*FAQ Questions Column*/
+    .faq-questions-column {
+      display: none;
+      float: right;
+      width: 70%;
+      padding: 0 0 100px 50px;
+      border-left: 10px solid #f4f4f4;
+      .faq-answers-block-title {
+        display: none;
+      }
+      .faq-answers-block {
+        padding-top: 45px;
+        font-size: 15px;
+        line-height: 27px;
+        .faq-answers-title {
+          font-weight: 500;
+        }
+      }
+    }
+    .faq-questions-column.active {
+      display: block;
+    }
+    /*FAQ List Column*/
+    .faq-list-column {
+      float: right;
+      width: 30%;
+      padding-top: 45px;
+      li a {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 44px;
+        border-bottom: 1px dashed;
+      }
+    }
+  }
+  /*Row FAQ Bottom Block Info*/
+  .faq-bottom-block-info {
+    padding-bottom: 70px;
+    font-size: 15px;
+    line-height: 24px;
+    p {
+      margin-bottom: 5px;
+    }
+    a {
+      color: #006DE4;
+    }
+  }
+}
+/*Footer*/
+.footer {
+  .bottom-menu {
+    padding: 43px 15px 90px;
+  }
+  .after-bottom-menu {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

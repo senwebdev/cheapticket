@@ -1,38 +1,49 @@
 <template>
   <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-toolbar>
-
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   },
-  data () {
+  data() {
     return {
-      //
+      text_color: '',
+    };
+  },
+  created() {
+    const now = new Date().getHours();
+    if ( now >= 6 && now < 11 ) {
+      this.$store.dispatch('updateState', 'morning');
+    } else if ( now >= 11 && now < 19 ) {
+      this.$store.dispatch('updateState', 'noon');
+    } else {
+      this.$store.dispatch('updateState', 'night');
     }
-  }
-}
+  },
+};
 </script>
+
+<style lang="scss" >
+
+@import '@/assets/style/adaptive-booking-page.scss';
+@import '@/assets/style/adaptive-confirm-page.scss';
+@import '@/assets/style/adaptive-contact-us.scss';
+@import '@/assets/style/adaptive-faq.scss';
+@import '@/assets/style/adaptive-my-profile.scss';
+@import '@/assets/style/adaptive-result-page.scss';
+@import '@/assets/style/adaptive.scss';
+@import '@/assets/style/booking-page.scss';
+@import '@/assets/style/confirm-page.scss';
+@import '@/assets/style/contact-us.scss';
+@import '@/assets/style/faq.scss';
+@import '@/assets/style/home.scss';
+@import '@/assets/style/main.scss';
+@import '@/assets/style/my-profile.scss';
+@import '@/assets/style/result-page.scss';
+
+</style>

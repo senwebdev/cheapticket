@@ -1,0 +1,265 @@
+$grid-breakpoints: (
+        sm: 0,
+        md: 320px,
+        lg: 768px,
+        xl: 1280px,
+        xxl: 1920px
+);
+
+$container-max-widths: (
+        sm: 0,
+        md: 320,
+        lg: 750,
+        xl: 768px,
+        xxl: 1920px,
+);
+@import "bootstrap/bootstrap";
+
+
+body {
+  background: #F9F9F9;
+}
+
+.form-control,
+.input-group-text {
+  height: 45px;
+  line-height: 45px;
+  background: #FBFBFB;
+  border: 1px solid #E8E8E8;
+  border-radius: 6px;
+}
+.input-group.date > .form-control:not(:last-child) {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.input-group-text {
+  border-left: none;
+}
+.input-group.date {
+  position: relative;
+  border-radius: 6px;
+  .input-group-addon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0.75rem;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562246197/arrow_down_multi_hjixa8.png") no-repeat right;
+    cursor: pointer;
+  }
+}
+.contact-checkbox {
+  margin: 30px 0 0 50px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.intl-tel-input {
+  display: block;
+}
+.custom-file-label {
+  position: unset;
+  margin-bottom: 0;
+  padding: 0 0.75rem;
+}
+.custom-file-label:after {
+  display: none;
+}
+
+/*Header*/
+.header {
+  line-height: 100px;
+  .header-adaptive {
+    display: none;
+  }
+  .header-right > div.header-right-currency {
+    margin-left: 0;
+  }
+  .header-right-country-toggle, .header-right-currency-toggle {
+    top: 28px;
+  }
+}
+/*Main Content*/
+/*Left Side*/
+.left-side-wrapper {
+  width: 285px;
+  margin: 0 auto;
+  .header-logo {
+    margin-bottom: 75px;
+    span {
+      padding-left: 28px;
+    }
+  }
+  .account-name {
+    margin-left: 60px;
+    padding-left: 35px;
+    font-size: 21px;
+    font-weight: 500;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141119/login_r6co23.png") no-repeat left;
+  }
+  .account-links {
+    margin: 20px 0 50px 95px;
+    font-size: 12px;
+    a {
+      text-decoration: underline;
+    }
+    a:first-child {
+      padding-right: 20px;
+    }
+  }
+  .left-menu {
+    margin-left: 96px;
+    font-size: 16px;
+    line-height: 33px;
+  }
+}
+/*Right Side*/
+.right-side {
+  /*Contact Icon*/
+  .contact-icon {
+    text-align: center;
+  }
+  .contact-icon a {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141119/login_r6co23.png") no-repeat center;
+  }
+  /*Row Contact Us Adaptive Title*/
+  .contact-us-adaptive-title {
+    display: none;
+  }
+  /*Row Contact Us*/
+  .contact-us {
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    /*Contacts Us Icon*/
+    .contact-icon {
+      padding-top: 70px;
+      line-height: 33px;
+    }
+    /*Contacts Us Left*/
+    .contact-us-left {
+      padding-top: 70px;
+      font-size: 15px;
+      .contact-us-left-title {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 33px;
+      }
+      .contact-us-left-text a {
+        color: #1172E4;
+      }
+    }
+    /*Contacts Us Right*/
+    .contact-us-right {
+      .contact-us-map {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        width: 810px;
+        height: 340px;
+      }
+      img {
+        display: block;
+        min-height: 100%;
+        min-width: 100%;
+        max-width: inherit;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+  /*Row Contact Support*/
+  .contact-support {
+    padding: 70px 0;
+    background: #FFFFFF;
+    .contact-support-title {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 33px;
+    }
+    /*Contact Support Select*/
+    .contact-support-select {
+      padding: 40px 0 70px;
+      .submit-requestion-info {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 27px;
+      }
+    }
+    /*Contact Support Form*/
+    .support-form-info {
+      margin-bottom: 20px;
+      li {
+        margin-left: 20px;
+        font-size: 15px;
+        line-height: 27px;
+        list-style-type: disc;
+      }
+    }
+    .custom-file-input {
+      display: none;
+    }
+    .upload-file-button, .submit-query {
+      width: 100%;
+      padding: 0;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 45px;
+      text-transform: uppercase;
+      background: #2785E2;
+      border: none;
+      border-radius: 3px;
+    }
+    .submit-query {
+      color: #000;
+      background: #FBDE4B;
+      border-radius: 6px;
+    }
+    .submit-query:hover {
+      box-shadow: none;
+    }
+    .fill-in-required {
+      margin-left: 40px;
+      color: #DB5257;
+      font-size: 16px;
+      line-height: 45px;
+    }
+  }
+}
+/*Footer*/
+.footer {
+  .bottom-menu {
+    padding: 43px 15px 90px;
+  }
+  .after-bottom-menu {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,501 @@
+$grid-breakpoints: (
+        sm: 0,
+        md: 320px,
+        lg: 768px,
+        xl: 1280px,
+        xxl: 1920px
+);
+
+$container-max-widths: (
+        sm: 0,
+        md: 320,
+        lg: 750,
+        xl: 768px,
+        xxl: 1920px,
+);
+@import "bootstrap/bootstrap";
+
+
+body {
+  background: #F9F9F9;
+}
+
+.form-control,
+.input-group-text {
+  height: 45px;
+  line-height: 45px;
+  background: #FBFBFB;
+  border: 1px solid #E8E8E8;
+  border-radius: 6px;
+}
+.input-group.date > .form-control:not(:last-child) {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.input-group-text {
+  border-left: none;
+}
+.input-group.date {
+  position: relative;
+  border-radius: 6px;
+  .input-group-addon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0.75rem;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562246197/arrow_down_multi_hjixa8.png") no-repeat right;
+    cursor: pointer;
+  }
+}
+.booking-checkbox {
+  font-size: 16px;
+}
+
+/*Header*/
+.header {
+  line-height: 100px;
+  .header-adaptive {
+    display: none;
+  }
+  .header-right > div.header-right-currency {
+    margin-left: 0;
+  }
+  .header-right-country-toggle, .header-right-currency-toggle {
+    top: 28px;
+  }
+}
+
+/*Main Content*/
+/*Left Side*/
+.left-side-wrapper {
+  width: 285px;
+  margin: 0 auto;
+  .header-logo {
+    margin-bottom: 75px;
+    span {
+      padding-left: 28px;
+    }
+  }
+  .account-name {
+    margin-left: 60px;
+    padding-left: 35px;
+    font-size: 21px;
+    font-weight: 500;
+    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141119/login_r6co23.png") no-repeat left;
+  }
+  .account-links {
+    margin: 20px 0 50px 95px;
+    font-size: 12px;
+    a {
+      text-decoration: underline;
+    }
+    a:first-child {
+      padding-right: 20px;
+    }
+  }
+  .left-menu {
+    margin-left: 96px;
+    font-size: 16px;
+    line-height: 33px;
+  }
+}
+/*Right Side*/
+.right-side {
+  /*Booking Block*/
+  .booking-block {
+    margin-bottom: 10px;
+    background: #FFFFFF;
+  }
+  /*Booking Title*/
+  .booking-title {
+    padding: 50px 60px 50px 0;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    .booking-user {
+      text-align: center;
+    }
+    .booking-user a {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141119/login_r6co23.png") no-repeat center;
+    }
+  }
+  /*Booking Airports*/
+  .booking-airports-wrapper {
+    padding-right: 60px;
+    margin-bottom: 10px;
+  }
+  .booking-airports-wrapper:last-child {
+    margin-bottom: 40px;
+  }
+  .booking-airports {
+    padding: 25px;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    .booking-first-airport,
+    .booking-second-airport {
+      float: left;
+    }
+    .booking-first-airport .booking-airport-name:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 240px;
+      height: 2px;
+      margin: 0 25px;
+      background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141115/confirm_between_line_rwdaaa.png") repeat-x;
+    }
+    .booking-airport-name {
+      margin-bottom: 10px;
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    .booking-airport-date {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    .booking-airport-place {
+      display: none;
+      color: #7F7F7F;
+      font-size: 12px;
+      line-height: 14px;
+    }
+    /*Booking status*/
+    .booking-status {
+      float: left;
+      padding: 32px 0 0 200px;
+      font-size: 15px;
+      line-height: 18px;
+      span {
+        font-size: 18px;
+      }
+      .status-progress {
+        color: #C1C1C1;
+      }
+      .status-confirmed {
+        color: #2CC55E;
+      }
+      .status-non-confirmed {
+        color: #FB002E;
+      }
+    }
+    /*Booking Price*/
+    .booking-price {
+      float: right;
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    /*Booking Passengers*/
+    .booking-passengers {
+      clear: both;
+      float: left;
+      padding-top: 25px;
+      font-size: 15px;
+      line-height: 18px;
+      span {
+        color: #686868;
+        text-decoration: underline;
+      }
+    }
+    /*Booking Links*/
+    .booking-links {
+      float: right;
+      padding-top: 25px;
+      a {
+        display: inline-block;
+        margin-right: 30px;
+        color: #686868;
+        text-decoration: underline;
+      }
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+    /*Booking Toggle*/
+    .booking-toggle {
+      display: none;
+      clear: both;
+      padding-top: 25px;
+      .toggle-flight-name {
+        padding-bottom: 25px;
+        font-size: 15px;
+        line-height: 18px;
+        border-bottom: 1px solid #E1E1E1;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 27px;
+          height: 23px;
+          margin-right: 15px;
+          background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562352199/flight_icon2_n0oz07.png") no-repeat;
+        }
+      }
+      .toggle-passengers-wrapper {
+        padding-top: 25px;
+        .toggle-passengers-block {
+          clear: both;
+          font-size: 15px;
+          line-height: 18px;
+          .toggle-passengers-title {
+            float: left;
+            width: 50%;
+            padding-bottom: 10px;
+          }
+          .toggle-passengers-tickets {
+            float: left;
+            width: 45%;
+            padding-top: 10px;
+            .wrapper-for-toggle-ticket {
+              float: left;
+              width: 100px;
+              margin-right: 30px;
+            }
+            .wrapper-for-toggle-ticket:last-child {
+              margin-right: 0;
+            }
+            .toggle-ticket.title {
+              display: none;
+              color: #4D4D4D;
+              font-size: 12px;
+              line-height: 14px;
+            }
+            .toggle-ticket.link {
+              color: #686868;
+              text-decoration: underline;
+            }
+          }
+          .toggle-passengers-tickets.title {
+            padding-top: 0;
+            .toggle-ticket.title {
+              display: inline-block;
+            }
+          }
+          .toggle-passengers-tickets.buttons {
+            padding-top: 30px;
+          }
+          .toggle-passengers-info {
+            float: left;
+            width: 50%;
+            padding-top: 10px;
+            div {
+              float: left;
+            }
+            .booking-checkbox.adaptive {
+              display: none;
+            }
+            .toggle-passenger-name {
+              width: 200px;
+              color: #686868;
+              text-decoration: underline;
+            }
+            .toggle-passenger-child {
+              text-align: center;
+              width: 150px;
+            }
+            .toggle-passenger-status {
+              text-align: center;
+              width: 150px;
+              color: #2CC55E;
+            }
+            .btn {
+              display: block;
+              width: 270px;
+              margin-bottom: 10px;
+              padding: 0;
+              color: #FFF;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 42px;
+              text-transform: uppercase;
+              border-radius: 3px;
+            }
+            .btn.change {
+              background: #2785E2;
+            }
+            .btn.cancel {
+              background: #E84546;
+            }
+          }
+          .toggle-passengers-info.buttons {
+            padding-top: 30px;
+          }
+          .booking-checkbox {
+            float: right;
+            .custom-control-label {
+              margin-bottom: 0.5rem;
+            }
+          }
+          /*Accordion Booking*/
+          #accordion-booking-1, #accordion-booking-2, #accordion-booking-3, #accordion-booking-4 {
+            padding-top: 25px;
+            .card {
+              border: none;
+              border-radius: 3px;
+              .card-header {
+                background-color: #F9F9F9;
+                border-bottom: none;
+                .btn {
+                  position: relative;
+                  text-align: left;
+                  width: 100%;
+                  color: #000;
+                  font-size: 15px;
+                  font-weight: 500;
+                  text-transform: uppercase;
+                  span {
+                    display: none;
+                  }
+                }
+                .btn:focus, .btn.focus {
+                  text-decoration: none;
+                }
+                .btn:after {
+                  content: '';
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  right: 0.75rem;
+                  width: 100%;
+                  height: 100%;
+                  background: url('https://res.cloudinary.com/kr-soft/image/upload/v1562246197/arrow_down_multi_hjixa8.png') no-repeat right;
+                  cursor: pointer;
+                }
+                .btn.collapsed:after {
+                  content: '';
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  right: 0.75rem;
+                  width: 100%;
+                  height: 100%;
+                  background: url('https://res.cloudinary.com/kr-soft/image/upload/v1562246197/arrow_down_multi_hjixa8.png') no-repeat right;
+                  cursor: pointer;
+                }
+              }
+              .card-body {
+                overflow: hidden;
+                padding: 0 2rem 2rem 2rem;
+                background-color: #F9F9F9;
+                .disclaimer {
+                  padding-bottom: 25px;
+                  font-size: 12px;
+                }
+                .terms-and-conditions {
+                  li {
+                    position: relative;
+                    padding-left: 25px;
+                    font-size: 12px;
+                    line-height: 24px;
+                  }
+                  li:before {
+                    content: '';
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    width: 13px;
+                    height: 10px;
+                    margin-right: 15px;
+                    background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141123/sign_up_white_fxzthk.png") no-repeat center;
+                  }
+                }
+                .terms-and-conditions.first {
+                  float: left;
+                  width: 45%;
+                }
+                .terms-and-conditions.second {
+                  float: right;
+                  width: 45%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /*Booking Flight Details*/
+    .booking-flight-details {
+      display: block;
+      clear: both;
+      float: left;
+      padding-top: 25px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      text-transform: uppercase;
+      border-bottom: 1px dashed;
+    }
+    /*Booking Buttons*/
+    .booking-buttons {
+      float: right;
+      padding-top: 25px;
+      a {
+        display: inline-block;
+        margin-right: 30px;
+      }
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  /*Booking Airports Active*/
+  .booking-airports.active {
+    .booking-airport-place {
+      display: block;
+    }
+    .booking-passengers, .booking-links {
+      display: none;
+    }
+  }
+  /*Booking Airports Previous Trips*/
+  .booking-airports.previous-trips {
+    .booking-flight-details {
+      clear: right;
+      float: right;
+    }
+  }
+}
+/*Footer*/
+.footer {
+  .bottom-menu {
+    padding: 43px 15px 90px;
+  }
+  .after-bottom-menu {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

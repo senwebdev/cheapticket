@@ -1,0 +1,760 @@
+@media (max-width: 1919px) {
+  body {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .container {
+    max-width: 1280px;
+  }
+  /*Right Side*/
+  .confirm-page-content {
+    .confirm-title {
+      padding: 50px 80px 50px 0;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .wrapper {
+      padding-right: 80px;
+    }
+    /*Row Confirm Airports*/
+    .confirm-airports {
+      .confirm-airport-name {
+        font-size: 21px;
+        line-height: 25px;
+      }
+      .confirm-go-air-stop,
+      .confirm-go-air-stop span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    /*Row Confirm Contacts and Promo*/
+    .confirm-contacts {
+      padding: 30px 0;
+    }
+    .confirm-promo-code {
+      padding-bottom: 40px;
+      .apply {
+        margin-top: 21px;
+      }
+    }
+    /*Row Confirm Travelers*/
+    .confirm-travelers-add a {
+      padding: 20px 0 40px;
+    }
+    /*Row Service Requests*/
+    #accordion-service-requests {
+      margin-bottom: 40px;
+      .card {
+        .card-header {
+          .btn {
+            font-size: 12px;
+          }
+        }
+        .card-body {
+          .service-places {
+            padding-top: 40px;
+            .service-places-passengers {
+              width: 300px;
+              .passenger {
+                font-size: 15px;
+                p {
+                  width: 150px;
+                }
+                .status-text strong {
+                  font-size: 13px;
+                }
+              }
+            }
+            .service-places-confirm {
+              width: 300px;
+              .service-places-confirm-info {
+                font-size: 12px;
+                line-height: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*Payment Methods List*/
+    .payment-list {
+      display: none;
+    }
+    /*Payment Methods Select*/
+    .payment-select {
+      display: flex;
+      padding-top: 40px;
+    }
+  }
+  /*Footer*/
+  .footer {
+    .bottom-menu {
+      padding: 32px 15px 58px;
+    }
+  }
+}
+@media (max-width: 1279px) {
+  .confirm-checkbox {
+    margin-left: 20px;
+  }
+  .container {
+    max-width: 768px;
+    padding: 0 9px;
+  }
+  /*Header*/
+  .header {
+    padding-top: 10px;
+    line-height: normal;
+    .header-left {
+      z-index: 3;
+    }
+    .header-adaptive {
+      display: block;
+    }
+    .header-adaptive-left {
+      float: left;
+    }
+    .header-adaptive-right {
+      float: right;
+    }
+    .header-phone, .header-right {
+      display: none;
+    }
+    .header-logo, .header-arrow-icon {
+      display: inline-block;
+    }
+    .header-logo {
+      padding-left: 20px;
+      img {
+        width: 36px;
+      }
+    }
+    .menu-adaptive-icon {
+      padding-right: 20px;
+    }
+  }
+  /*Left Side*/
+  .left-side {
+    display: none;
+  }
+  /*Right Side*/
+  .right-side {
+    margin-top: -20px;
+  }
+  .confirm-page-content {
+    .confirm-title {
+      padding: 25px 15px 15px 0;
+      font-size: 18px;
+      line-height: 21px;
+      border-bottom: 6px solid rgba(0, 0, 0, 0.0333164);
+      border-radius: 3px;
+    }
+    .black-plane {
+      margin: 30px auto 0;
+    }
+    .wrapper {
+      padding-right: 15px;
+    }
+    /*Row Confirm Airports*/
+    .confirm-airports {
+      padding: 30px 0;
+      .confirm-airport-name {
+        font-size: 18px;
+        line-height: 21px;
+      }
+      .confirm-first-airport .confirm-airport-name:after {
+        width: 110px;
+        margin: 0 15px;
+      }
+      .confirm-airport-time {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 21px;
+      }
+      .confirm-airport-place {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      .confirm-go-air-number {
+        width: 100%;
+        padding-left: 37px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+    /*Row Confirm Contacts and Promo*/
+    .confirm-contacts {
+      .confirm-contacts-title {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      .confirm-contacts-info {
+        font-size: 15px;
+      }
+    }
+    .confirm-promo-code {
+      label {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      .apply {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .confirm-title.travelers,
+    .confirm-title.service-requests {
+      border: none;
+      border-radius: 0;
+    }
+    /*Row Confirm Travelers*/
+    .confirm-travelers {
+      padding: 15px 15px 15px 0;
+      .block-2 {
+        border-bottom: 1px solid #979797;
+      }
+      .block-3 {
+        padding-top: 1rem;
+      }
+    }
+    /*Row Service Requests*/
+    #accordion-service-requests {
+      margin: 10px auto 25px;
+      .card .card-body {
+        .service-settings {
+          label {
+            font-size: 15px;
+          }
+        }
+        .service-places {
+          padding-top: 25px;
+          .service-places-passengers {
+            float: none;
+            width: 100%;
+            padding-bottom: 0;
+            .passenger {
+              p {
+                width: 150px;
+              }
+            }
+          }
+          .service-places-choose {
+            overflow-x: auto;
+            float: none;
+            margin: 25px 0;
+            padding-bottom: 25px;
+            .number, .letter {
+              flex-direction: row;
+            }
+          }
+          .service-places-info {
+            float: none;
+            padding: 25px 0;
+            border-top: 1px solid #E3E3E3;
+          }
+          .service-places-confirm {
+            position: static;
+            width: 100%;
+            .service-places-confirm-info {
+              font-size: 12px;
+              line-height: 14px;
+            }
+            .confirm-button {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+    /*Row Choose Payment Method*/
+    /*Payment Form*/
+    .payment-form {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      /*Confirm Total Row*/
+      .confirm-total {
+        font-size: 15px;
+        line-height: 18px;
+        .total-amount {
+          margin-bottom: 20px;
+          .price {
+            font-size: 21px;
+          }
+        }
+        .book-flight {
+          clear: both;
+          float: none;
+        }
+        .confirm-advert {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  /*Footer*/
+  .footer {
+    .bottom-menu {
+      display: none;
+    }
+    .after-bottom-menu {
+      display: block;
+      padding: 10px 9px 30px;
+      color: #686868;
+      font-size: 9px;
+      line-height: 11px;
+    }
+    .confirm-copyright {
+      float: left;
+    }
+    .confirm-made-with {
+      float: right;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .input-group > .form-control:not(:last-child) {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .confirm-checkbox {
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .container {
+    max-width: 320px;
+    padding: 0 8px;
+  }
+  .form-control {
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    background: #FBFBFB;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+  }
+  /*Right Side*/
+  .confirm-page-content {
+    .confirm-title-icon {
+      display: block;
+      width: 13px;
+      height: 10px;
+      margin: 0 auto;
+    }
+    .confirm-title {
+      padding: 25px 0 15px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+    .confirm-block {
+      margin-bottom: 6px;
+    }
+    .wrapper {
+      padding-right: 0;
+    }
+    /*Row Confirm Airports*/
+    .confirm-airports-block {
+      border-bottom: 6px solid rgba(0, 0, 0, 0.0333164);
+    }
+    .confirm-airports {
+      border-bottom: none;
+      .confirm-airport-name {
+        margin-bottom: 0;
+        font-size: 15px;
+        line-height: 18px;
+      }
+      .confirm-first-airport, .confirm-second-airport {
+        position: relative;
+        float: none;
+      }
+      .confirm-first-airport:after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 17px;
+        margin: 8px 0;
+        background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141115/confirm_between_line_small_qlsmp4.png") no-repeat;
+      }
+      .confirm-first-airport .confirm-airport-name:after {
+        display: none;
+      }
+      .confirm-airport-time {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        margin: 0;
+      }
+      .confirm-airport-time,
+      .confirm-go-air-number {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      .confirm-airport-place {
+        font-size: 9px;
+        line-height: 11px;
+      }
+      .confirm-go-air-number {
+        margin-top: 20px;
+      }
+      .confirm-go-air-stop {
+        float: left;
+        margin: 20px 0 0 0;
+      }
+      .confirm-go-air-icons {
+        float: right;
+        margin: 20px 0 0 0;
+      }
+    }
+    /*Row Confirm Contacts and Promo*/
+    .confirm-contacts {
+      padding: 15px;
+      border-bottom: 6px solid rgba(0, 0, 0, 0.0333164);
+      .confirm-contacts-left {
+        margin-bottom: 20px;
+      }
+      .confirm-contacts-info {
+        line-height: 18px;
+      }
+      .confirm-contacts-link {
+        color: #216EDB;
+        font-size: 9px;
+        line-height: 11px;
+        text-decoration: none;
+        border-bottom: 1px dotted #216EDB;
+      }
+    }
+    .confirm-promo-code {
+      padding: 15px;
+      .apply {
+        width: 36px;
+        height: 36px;
+        text-indent: -9999999px;
+        background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562423897/confirm_promo_code_apply_zojyex.png") no-repeat center;
+        border: none;
+      }
+    }
+    .confirm-title.travelers {
+      padding: 15px;
+    }
+    /*Row Confirm Travelers*/
+    .confirm-travelers.wrapper {
+      padding: 0 15px;
+      .block-2 {
+        border-bottom: none;
+      }
+      .block-3 {
+        padding-top: 0;
+      }
+    }
+    .confirm-travelers-add {
+      text-align: center;
+      padding: 0 15px;
+      border-top: 1px solid #EDEDED;
+      a {
+        padding: 20px 0;
+        font-size: 12px;
+        line-height: 14px;
+        span {
+          vertical-align: top;
+          width: auto;
+          height: 9px;
+          margin-right: 10px;
+          text-indent: 1px;
+          background: none;
+        }
+      }
+    }
+    /*Row Service Requests*/
+    .confirm-title.service-requests {
+      display: none;
+    }
+    #accordion-service-requests {
+      margin: 0 auto;
+      .card {
+        .card-header {
+          padding: 0;
+          background-color: #fff;
+          border-bottom: none;
+          .btn {
+            height: 45px;
+            font-size: 15px;
+            text-transform: none;
+            span {
+              display: block;
+              color: #7B8A8F;
+              font-size: 9px;
+              font-weight: normal;
+              line-height: 11px;
+              text-transform: none;
+            }
+          }
+          .btn.collapsed {
+            border-bottom: 2px solid #f9f9f9;
+          }
+        }
+        .card-body {
+          padding: 0 15px;
+          border-bottom: 6px solid #f9f9f9;
+          .service-airports-title {
+            display: none;
+          }
+          .service-airports .confirm-airports {
+            padding: 20px 0;
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
+          }
+          .service-settings {
+            padding: 20px 0 0;
+            label {
+              font-size: 12px;
+            }
+            .service-settings-close {
+              text-align: center;
+              margin-top: 28px;
+            }
+          }
+          .service-places {
+            padding: 20px 0 12px;
+            .service-places-passengers {
+              border-bottom: none;
+              .title {
+                display: none;
+              }
+              .passenger {
+                margin-bottom: 0;
+                font-size: 12px;
+                font-weight: normal;
+                line-height: 14px;
+                .status-icon, .status-text {
+                  display: none;
+                }
+                p.select-place-desktop {
+                  display: none;
+                }
+                p.select-place-adaptive {
+                  display: inline-block;
+                  width: 49%;
+                  margin-bottom: 20px;
+                }
+                input.form-control {
+                  display: inline-block;
+                  position: relative;
+                  width: 49%;
+                  background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141122/passenger_input_hyu6qx.png")#FBFBFB no-repeat 90% center;
+                }
+                input:disabled.form-control {
+                  background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562423897/passenger_input_disabled_xpy7ji.png")#e9ecef no-repeat 90% center;
+                }
+              }
+            }
+            .service-places-info, .service-places-choose.active {
+              display: none;
+            }
+            .service-places-confirm {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    /*Row Choose Payment Method*/
+    .confirm-title.payment {
+      display: block;
+      padding: 15px;
+      border: none;
+      border-radius: 0;
+    }
+    /*Payment Form*/
+    .payment-form {
+      padding: 0 15px 15px 15px;
+      .input-group-append {
+        display: none;
+      }
+      /*Confirm Accept Row*/
+      .confirm-accept {
+        margin: 0 0 10px 0;
+        .accept-title {
+          text-align: center;
+          color: #6A6A6A;
+        }
+        .confirm-checkbox {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-top: 1px solid #EDEDED;
+          border-bottom: 1px solid #EDEDED;
+        }
+      }
+      /*Confirm Total Row*/
+      .confirm-total {
+        .total-amount {
+          text-align: center;
+          width: 100%;
+          span {
+            display: block;
+          }
+          .price {
+            padding: 5px 0 0 0;
+            font-size: 32px;
+            line-height: 37px;
+          }
+        }
+        .book-flight {
+          text-align: center;
+          width: 100%;
+        }
+        .confirm-advert {
+          display: none;
+        }
+      }
+    }
+    /*Row Choose Payment Method*/
+    .payment-select {
+      padding: 0 15px 15px 15px;
+    }
+  }
+  /*Footer*/
+  .footer {
+    .bottom-menu {
+      display: none;
+    }
+    .after-bottom-menu {
+      padding: 10px 0 30px;
+    }
+  }
+  /*Modal Window with Select Places*/
+  #select-place-1,
+  #select-place-2 {
+    .modal-dialog {
+      max-width: 320px;
+      padding: 0 8px;
+    }
+    .modal-content.select-place {
+      padding: 0;
+      border: none;
+      .modal-title {
+        margin: 0;
+        padding: 12px;
+        font-size: 15px;
+        line-height: 18px;
+      }
+      .service-places-choose.modal-places {
+        overflow: hidden;
+        display: block;
+        padding: 20px 12px 5px;
+        border-top: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        .letter {
+          opacity: 0.3;
+        }
+      }
+      /*Slider Arrows*/
+      .confirm-slider-btn {
+        position: absolute;
+        top: 0;
+        width: 42px;
+        height: 42px;
+        z-index: 1;
+      }
+      .confirm-slider-btn.slick-prev {
+        right: 32px;
+        background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562423897/arrow_left_select-place_vdnles.png");
+      }
+      .confirm-slider-btn.slick-next {
+        right: 0;
+        background: url("https://res.cloudinary.com/kr-soft/image/upload/v1562141115/arrow_right_select-place_epwvas.png");
+      }
+      .slider-item.front {
+        .confirm-slider-btn.slick-prev {
+          right: 0;
+        }
+      }
+      .slider-item.end {
+        .confirm-slider-btn.slick-next {
+          display: none;
+        }
+      }
+      /*Slider Dots*/
+      .slick-dots {
+        text-align: center;
+        padding-top: 20px;
+        li {
+          display: inline-block;
+          margin-right: 10px;
+        }
+        li button {
+          width: 6px;
+          height: 6px;
+          padding: 0;
+          text-indent: -999999px;
+          -moz-border-radius: 6px;
+          -webkit-border-radius: 6px;
+          border-radius: 6px;
+          border: none;
+        }
+        li.slick-active button {
+          background: #FBDE4B;
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+      .service-places-info {
+        padding: 20px 12px;
+        .places-color {
+          padding-bottom: 10px;
+          span {
+            display: inline-block;
+            vertical-align: middle;
+            width: 22px;
+            height: 22px;
+            margin-right: 5px;
+            background: #0089E8;
+            border: 1px solid #E8E8E8;
+            border-radius: 3px;
+          }
+        }
+        .places-color:nth-child(2) span {
+          background: #FBFBFB;
+        }
+        .places-color:nth-child(3) span {
+          background: #DADADA;
+        }
+        .places-color:nth-child(4) {
+          padding-bottom: 0;
+          span {
+            background: #FFDB00;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
